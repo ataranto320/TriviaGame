@@ -1,3 +1,4 @@
+// questions
 var myQuestions = [
     {
         question: "Who shot first?",
@@ -29,3 +30,6 @@ var myQuestions = [
         correctAnswer: 'a'
     }
 ];
+
+var quizContent = document.getElementById('quiz');
+var resultsContent = document.getElementById('results');
