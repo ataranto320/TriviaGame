@@ -20,6 +20,12 @@ var myQuestions = [
     },
 
     {
-        question: 
+        question: "Where is Forrest Gump from?",
+        answers: {
+            a: 'Alabama',
+            b: 'South Carolina',
+            c: 'Georgia'
+        },
+        correctAnswer: 'a'
     }
-]
+];
