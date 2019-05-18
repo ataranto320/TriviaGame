@@ -33,14 +33,14 @@ var myQuestions = [
 
 //grades
 
-var correctAnswers = 0;
+var correctAnswer = 0;
 var wrongAnswers = 0;
 var unAnswered = 0;
 
-// var gradedQuiz = //submission button .on('click'), function() {
+var gradedQuiz = //submission button .on('click'), function() {
 
-// }
-for (var i = 0; i < 3; i++) {
+}
+for (var i = 0; i < myQuestions.length; i++) {
     if //correct answer for all three question {
         correctAnswers++;
     } else {
