@@ -31,5 +31,28 @@ var myQuestions = [
     }
 ];
 
+//grades
+
+var correctAnswers = 0;
+var wrongAnswers = 0;
+var unAnswered = 0;
+
+// var gradedQuiz = //submission button .on('click'), function() {
+
+// }
+for (var i = 0; i < 3; i++) {
+    if //correct answer for all three question {
+        correctAnswers++;
+    } else {
+        wrongAnswers++;
+    };
+
+};
+
+//sections
 var quizContent = document.getElementById('quiz');
 var resultsContent = document.getElementById('results');
+
+//timer
+
+
