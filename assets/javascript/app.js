@@ -32,6 +32,8 @@ var myQuestions = [
 ];
 
 //radio buttons for answer selection
+//form action
+//type="radio"
 
 //grades
 
