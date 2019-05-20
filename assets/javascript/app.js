@@ -31,6 +31,8 @@ var myQuestions = [
     }
 ];
 
+//radio buttons for answer selection
+
 //grades
 
 var correctAnswer = 0;
