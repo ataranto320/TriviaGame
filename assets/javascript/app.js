@@ -54,8 +54,11 @@ for (var i = 0; i < myQuestions.length; i++) {
 };
 
 //sections
-var quizContent = document.getElementById('quiz');
-var resultsContent = document.getElementById('results');
+var quizQuestions = document.getElementById('quiz');
+var quizAnswers = document.getElementById('answers');
+
+function quizQuestions()
+function quizAnswers()
 
 //timer
 
