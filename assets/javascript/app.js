@@ -58,6 +58,19 @@ var quizQuestions = document.getElementById('quiz');
 var quizAnswers = document.getElementById('answers');
 
 function quizQuestions()
+
+var output =[];
+var answers;
+
+for (var j = 0; j < myQuestions.length; i++) {
+    answers = [];
+    for (letter in myQuestions[i].answers) {
+        answers.push();
+    }
+    output.push();
+}
+
+gradedQuiz.innerHTML = output.join(' ');
 function quizAnswers()
 
 //timer
