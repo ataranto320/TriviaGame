@@ -41,8 +41,8 @@ var correctAnswer = 0;
 var wrongAnswers = 0;
 var unAnswered = 0;
 
-var gradedQuiz = //submission button .on('click'), function() {
-
+var gradedQuiz = $("#submit-button").on('click'), function() {
+    myQuestions + quizAnswers === total;
 }
 for (var i = 0; i < myQuestions.length; i++) {
     if (myQuestions[i] === true) {
