@@ -64,7 +64,7 @@ var answers;
 
 for (var j = 0; j < myQuestions.length; i++) {
     answers = [];
-    for (letter in myQuestions[i].answers) {
+    for (letter in myQuestions[j].answers) {
         answers.push();
     }
     output.push();
