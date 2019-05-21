@@ -75,7 +75,29 @@ function quizAnswers()
 
 //timer
 
-var countDown 
+function timer(duration, display) {
+    var countDown = duration, minute, seconds;
+    setInterval(function(){
+        minute = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var oneMinute = 60 * 1,
+    display = $('#time');
+    timer(oneMinute, display);
+}
+
 
 
 // when a user clicks the submit button we want to get the answers 
