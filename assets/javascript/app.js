@@ -75,4 +75,4 @@ function quizAnswers()
 
 //timer
 
-
+var countDown 
