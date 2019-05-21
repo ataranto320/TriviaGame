@@ -45,7 +45,7 @@ var gradedQuiz = //submission button .on('click'), function() {
 
 }
 for (var i = 0; i < myQuestions.length; i++) {
-    if //correct answer for all three question {
+    if (myQuestions[i] === true) {
         correctAnswers++;
     } else {
         wrongAnswers++;
@@ -59,7 +59,7 @@ var quizAnswers = document.getElementById('answers');
 
 function quizQuestions()
 
-var output =[];
+var output = [];
 var answers;
 
 for (var j = 0; j < myQuestions.length; i++) {
@@ -76,3 +76,7 @@ function quizAnswers()
 //timer
 
 var countDown 
+
+
+// when a user clicks the submit button we want to get the answers 
+// go through loop answers and see if they are correct or not
