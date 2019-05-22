@@ -72,7 +72,7 @@ for (var i = 0; i < myQuestions.length; i++) {
 
 //countdown timer
 
-var countDown = thirty seconds(":30").getTime();
+var countDown = thirty (":30").getTime();
 var timer = setInterval (function(){
     var seconds = Math.floor(distance % (1000 * 60) / 1000);
     document.getElementById("timer").innerHTML = seconds + "s";
