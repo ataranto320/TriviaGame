@@ -35,16 +35,31 @@ var myQuestions = [
 //form action
 //type="radio"
 
-//grades
+//variables
 
-var correctAnswer = 0;
+var correctAnswers = 0;
 var wrongAnswers = 0;
 var unAnswered = 0;
 var output = [];
 var answers;
 
+//start game
+
+function startGame() {
+    unAnswered = 3
+    answers = " "
+    correctAnswers = 0
+    wrongAnswers = 0
+    timer = 0
+    document.getElementById("right").innerHTML = correctAnswers;
+    document.getElementById("wrong").innerHTML = wrongAnswers;
+    document.getElementById("unanswered").innerHTML = unAnswered;
+};
+
+//gardes
+
 var gradedQuiz = $("#submit-button").on('click'), function() {
-    myQuestions + quizAnswers === total;
+    myQuestions + quizAnswers === correctAnswers;
 }
 for (var i = 0; i < myQuestions.length; i++) {
     if (myQuestions[i] === true) {
@@ -55,37 +70,24 @@ for (var i = 0; i < myQuestions.length; i++) {
 
 };
 
-//start game
-
-function startGame() {
-    unAnswered = 3
-    answers = " "
-    correctAnswer = 0
-    wrongAnswers = 0
-    timer = 0
-    document.getElementById("right").innerHTML = correctAnswer;
-    document.getElementById("wrong").innerHTML = wrongAnswers;
-    document.getElementById("unanswered").innerHTML = unAnswered;
-}
-
 //sections
-var quizQuestions = document.getElementById('quiz');
-var quizAnswers = document.getElementById('answers');
+// var quizQuestions = document.getElementById('quiz');
+// var quizAnswers = document.getElementById('answers');
 
-function quizQuestions()
+// function quizQuestions()
 
 
 
-for (var j = 0; j < myQuestions.length; i++) {
-    answers = [];
-    for (letter in myQuestions[j].answers) {
-        answers.push();
-    }
-    output.push();
-}
+// for (var j = 0; j < myQuestions.length; i++) {
+//     answers = [];
+//     for (letter in myQuestions[j].answers) {
+//         answers.push();
+//     }
+//     output.push();
+// }
 
-gradedQuiz.innerHTML = output.join(' ');
-function quizAnswers()
+// gradedQuiz.innerHTML = output.join(' ');
+// function quizAnswers()
 
 //timer
 
