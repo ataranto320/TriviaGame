@@ -86,6 +86,8 @@ var timer = setInterval (function(){
     }
 }, 1000);
 
+
+
 //sections
 // var quizQuestions = document.getElementById('quiz');
 // var quizAnswers = document.getElementById('answers');
