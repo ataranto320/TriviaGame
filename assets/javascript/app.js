@@ -54,13 +54,15 @@ function startGame() {
     document.getElementById("right").innerHTML = ("Right") + correctAnswers;
     document.getElementById("wrong").innerHTML = ("Wrong") + wrongAnswers;
     document.getElementById("unanswered").innerHTML = ("Didn't Answer") + unAnswered;
-    // startGame("#Start").on('click')
+    // startGame("#start").on('click')
+    // need start button function
 };
 
 //gardes
 
-var gradedQuiz = $("#submit-button").on('click'), function() {
-    myQuestions + quizAnswers === userAnswers;
+function gradedQuiz () {
+    $("#submit-button").on('click')
+    // myQuestions + quizAnswers === userAnswers;
 }
 for (var i = 0; i < myQuestions.length; i++) {
     if (myQuestions[i] === true) {
