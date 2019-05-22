@@ -56,6 +56,7 @@ function startGame() {
     document.getElementById("unanswered").innerHTML = ("Didn't Answer") + unAnswered;
     // startGame("#start").on('click')
     // need start button function
+    $("#start-button").on('click')
 };
 
 //gardes
