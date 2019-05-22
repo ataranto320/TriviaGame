@@ -51,9 +51,9 @@ function startGame() {
     correctAnswers = 0
     wrongAnswers = 0
     timer = 0
-    document.getElementById("right").innerHTML = "Right" + correctAnswers;
-    document.getElementById("wrong").innerHTML = "Wrong" + wrongAnswers;
-    document.getElementById("unanswered").innerHTML = "Didn't Answer" + unAnswered;
+    document.getElementById("right").innerHTML = ("Right") + correctAnswers;
+    document.getElementById("wrong").innerHTML = ("Wrong") + wrongAnswers;
+    document.getElementById("unanswered").innerHTML = ("Didn't Answer") + unAnswered;
 };
 
 //gardes
