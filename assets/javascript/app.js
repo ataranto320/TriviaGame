@@ -54,6 +54,7 @@ function startGame() {
     document.getElementById("right").innerHTML = ("Right") + correctAnswers;
     document.getElementById("wrong").innerHTML = ("Wrong") + wrongAnswers;
     document.getElementById("unanswered").innerHTML = ("Didn't Answer") + unAnswered;
+    // startGame("#Start").on('click')
 };
 
 //gardes
