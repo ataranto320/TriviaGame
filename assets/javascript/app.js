@@ -51,15 +51,15 @@ function startGame() {
     correctAnswers = 0
     wrongAnswers = 0
     timer = 0
-    document.getElementById("right").innerHTML = correctAnswers;
-    document.getElementById("wrong").innerHTML = wrongAnswers;
-    document.getElementById("unanswered").innerHTML = unAnswered;
+    document.getElementById("right").innerHTML = "Right" + correctAnswers;
+    document.getElementById("wrong").innerHTML = "Wrong" + wrongAnswers;
+    document.getElementById("unanswered").innerHTML = "Didn't Answer" + unAnswered;
 };
 
 //gardes
 
 var gradedQuiz = $("#submit-button").on('click'), function() {
-    myQuestions + quizAnswers === correctAnswers;
+    myQuestions + quizAnswers === userAnswers;
 }
 for (var i = 0; i < myQuestions.length; i++) {
     if (myQuestions[i] === true) {
@@ -69,6 +69,18 @@ for (var i = 0; i < myQuestions.length; i++) {
     };
 
 };
+
+//countdown timer
+
+var countDown = thirty seconds(":30").getTime();
+var timer = setInterval (function(){
+    var seconds = Math.floor(distance % (1000 * 60) / 1000);
+    document.getElementById("timer").innerHTML = seconds + "s";
+    if (timer < 0) {
+        clearInterval("timer");
+        document.getElementById("timer").innerHTML = "Finished";
+    }
+}, 1000);
 
 //sections
 // var quizQuestions = document.getElementById('quiz');
