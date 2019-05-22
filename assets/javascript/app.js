@@ -76,15 +76,21 @@ for (var i = 0; i < myQuestions.length; i++) {
 
 //countdown timer
 
-var countDown = thirty (":30").getTime();
+var countDown = count (":30").getTime();
 var timer = setInterval (function(){
     var seconds = Math.floor(distance % (1000 * 60) / 1000);
     document.getElementById("timer").innerHTML = seconds + "s";
     if (timer < 0) {
         clearInterval("timer");
-        document.getElementById("timer").innerHTML = "Finished";
+        document.getElementById("timer-secs").innerHTML = "Finished";
+        "<span class= 'label'>SECS(S)</span>";
+    }
+    else {
+        document.getElementById("timer").innerHTML = "Time's Up";
     }
 }, 1000);
+
+//display timer
 
 
 
