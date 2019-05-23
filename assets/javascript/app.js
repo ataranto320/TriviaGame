@@ -42,53 +42,66 @@ var wrongAnswers = 0;
 var unAnswered = 0;
 var output = [];
 var answers;
+var timer = 30; 
 
 //start game
 
-function startGame() {
+$("#start-button").on('click', function(){
+    startTimer()
+}) 
+
+
+
+//reset game 
+
+function resetGame() {
     unAnswered = 3
     answers = " "
     correctAnswers = 0
     wrongAnswers = 0
-    timer = 0
-    document.getElementById("right").innerHTML = ("Right") + correctAnswers;
-    document.getElementById("wrong").innerHTML = ("Wrong") + wrongAnswers;
-    document.getElementById("unanswered").innerHTML = ("Didn't Answer") + unAnswered;
+    timer = 30
+    $("#right").html("Right" + correctAnswers);
+    $("#wrong").html("Wrong" + wrongAnswers);
+    $("#unanswered").html("Didn't Answer" + unAnswered);
     // startGame("#start").on('click')
     // need start button function
-    $("#start-button").on('click')
+    
 };
 
-//gardes
+//grades
 
 function gradedQuiz () {
     $("#submit-button").on('click')
     // myQuestions + quizAnswers === userAnswers;
-}
-for (var i = 0; i < myQuestions.length; i++) {
-    if (myQuestions[i] === true) {
-        correctAnswers++;
-    } else {
-        wrongAnswers++;
-    };
+    var inputs = $("#questions").children("input:checked")
+    console.log("INPUTS", inputs)
+    for (var i = 0; i < myQuestions.length; i++) {
+        console.log(inputs[i].value)
+        if (myQuestions[i]) {
+            correctAnswers++;
+        } else {
+            wrongAnswers++;
+        };
 
+    };
 };
 
 //countdown timer
 
-var countDown = count (":30").getTime();
-var timer = setInterval (function(){
-    var seconds = Math.floor(distance % (1000 * 60) / 1000);
-    document.getElementById("timer").innerHTML = seconds + "s";
+function startTimer (){
+var interval = setInterval (function(){
+    document.getElementById("timer").innerHTML = timer + "s";
     if (timer < 0) {
-        clearInterval("timer");
-        document.getElementById("timer-secs").innerHTML = "Finished";
-        "<span class= 'label'>SECS(S)</span>";
+        clearInterval(interval);
+        document.getElementById("timer").innerHTML = "Finished";
     }
-    else {
-        document.getElementById("timer").innerHTML = "Time's Up";
-    }
+    timer--;
 }, 1000);
+}
+
+$('#submit-button').on("click", function(){
+    gradedQuiz()
+})
 
 //display timer
 
